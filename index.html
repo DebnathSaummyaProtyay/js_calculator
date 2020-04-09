@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container py-5 my-5">
+		<div class="row justify-content-center">
+			<div class="col-sm-4">
+				<input type="text" id="Show" readonly="readonly" class="form-control bg-dark text-light">
+				<div class="row no-gutters">
+				    <button class="btn-sm btn-dark col-3" onclick="one()">1</button>
+				    <button class="btn-sm btn-dark col-3" onclick="two()">2</button>
+				    <button class="btn-sm btn-dark col-3" onclick="three()">3</button>
+				    <button class="btn-sm btn-dark col-3" onclick="four()">4</button>
+				</div>
+				<div class="row no-gutters">
+				    <button class="btn-sm btn-dark col-3"onclick="five()">5</button>
+				    <button class="btn-sm btn-dark col-3"onclick="six()">6</button>
+				    <button class="btn-sm btn-dark col-3"onclick="seven()">7</button>
+				    <button class="btn-sm btn-dark col-3"onclick="eight()">8</button>
+			    </div>
+			    <div class="row no-gutters">
+				    <button class="btn-sm btn-dark col-3"onclick="nine()">9</button>
+				    <button class="btn-sm btn-dark col-3"onclick="zero()">0</button>
+                    <button class="btn-sm btn-dark col-3"onclick="Add()">+</button>
+				    <button class="btn-sm btn-dark col-3"onclick="Sub()">-</button>
+			    </div>
+			    <div class="row no-gutters">
+				    <button class="btn-sm btn-dark col-3"onclick="Div()">/</button>
+				    <button class="btn-sm btn-dark col-3"onclick="Mult()">*</button>
+				    <button class="btn-sm btn-dark col-3"onclick="Dlt()">Dtl</button>
+				    <button class="btn-sm btn-dark col-3"onclick="Clr()">Clr</button>
+			    </div>
+			    <div class="row no-gutters">
+				    <button class="btn-sm btn-dark col-12"onclick="Equ()">=</button>
+				    
+			    </div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script>
+		var e = document.getElementById('Show')
+		
+		function one() {
+			e.value +='1';
+		}
+		function two() {
+			e.value +='2';
+		}
+		function three() {
+			e.value +='3';
+		}
+		function four() {
+			e.value +='4';
+		}
+		function five() {
+			e.value +='5';
+		}
+		function six() {
+			e.value +='6';
+		}
+		function seven() {
+			e.value +='7';
+		}
+		function eight() {
+			e.value +='8';
+		}
+		function nine() {
+			e.value +='9';
+		}
+		function zero() {
+			e.value +='0';
+		}
+
+		function Add() {
+			e.value +='+';
+		}
+		function Sub() {
+			e.value +='-';
+		}
+		function Div() {
+			e.value +='/';
+		}
+		function Mult() {
+			e.value +='*';
+		}
+		function Equ() {
+			
+			e.value = eval(e.value);
+
+		}
+		function Clr() {
+			e.value ="";
+		}
+		function Dlt(){
+
+			var a = e.value;
+			e.value = a.substring(0,a.length - 1);
+		}
+		
+		
+	</script>
+
+</body>
+</html>
